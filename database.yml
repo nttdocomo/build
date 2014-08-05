@@ -1,5 +1,6 @@
 
 default:
-  adapter:   sqlite3
-  database:  <%= BUILD_DIR %>/football.db
-
+  adapter:   mysql2
+  database:  football
+  encoding:  'utf8'
+  password:  '82Gz827m'

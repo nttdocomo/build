@@ -15,14 +15,14 @@ task :all => [:importbuiltin, :grounds] do
   # clubs
 
   SportDb.read_setup( 'setups/clubs',  CLUBS_INCLUDE_PATH )
-  SportDb.read_setup( 'setups/teams',  AT_INCLUDE_PATH )
-  SportDb.read_setup( 'setups/teams',  DE_INCLUDE_PATH )
-  SportDb.read_setup( 'setups/teams',  EN_INCLUDE_PATH )
-  SportDb.read_setup( 'setups/teams',  ES_INCLUDE_PATH )
-  SportDb.read_setup( 'setups/teams',  IT_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',  AT_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',  DE_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',  EN_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',  ES_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',  IT_INCLUDE_PATH )
 
-  SportDb.read_setup( 'setups/teams',  MX_INCLUDE_PATH )  # include invitees (mx teams)
-  SportDb.read_setup( 'setups/teams',  BR_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',  MX_INCLUDE_PATH )  # include invitees (mx teams)
+  SportDb.read_setup( 'setups/clubs',  BR_INCLUDE_PATH )
 
   ### fix!! -add setups/events  to setups; add all teams to setups/teams !!!!
   # [debug] parsing game (fixture) line: >Sáb 5 Ene 19:30  Morelia      3-3  Cruz Azul<

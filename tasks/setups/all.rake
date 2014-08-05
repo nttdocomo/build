@@ -14,7 +14,7 @@ task :all => [:importbuiltin, :grounds] do
   ################
   # clubs
 
-  SportDb.read_setup( 'setups/teams',  CLUBS_INCLUDE_PATH )
+  SportDb.read_setup( 'setups/clubs',  CLUBS_INCLUDE_PATH )
   SportDb.read_setup( 'setups/teams',  AT_INCLUDE_PATH )
   SportDb.read_setup( 'setups/teams',  DE_INCLUDE_PATH )
   SportDb.read_setup( 'setups/teams',  EN_INCLUDE_PATH )

@@ -33,6 +33,8 @@ task :all => [:importbuiltin, :grounds] do
   # [debug]    score: >19-30<
   #[debug]   line: >Sáb 5 Ene [SCORE]  [TEAM1]       3-3  [TEAM2] <
 
+  SportDb.read_setup( 'setups/all', CLUBS_INCLUDE_PATH )  # circular reference; requires other teams
+
   SportDb.read_setup( 'setups/all',  AT_INCLUDE_PATH )
   SportDb.read_setup( 'setups/all',  DE_INCLUDE_PATH )
   SportDb.read_setup( 'setups/all',  EN_INCLUDE_PATH )
@@ -45,6 +47,4 @@ task :all => [:importbuiltin, :grounds] do
   SportDb.read_setup( 'setups/all', NORTH_AMERICA_CHAMPIONS_LEAGUE_INCLUDE_PATH )
   SportDb.read_setup( 'setups/all', BR_INCLUDE_PATH )
   SportDb.read_setup( 'setups/all', COPA_LIBERTADORES_INCLUDE_PATH )
-
-  SportDb.read_setup( 'setups/all', CLUBS_INCLUDE_PATH )  # circular reference; requires other teams
 end
